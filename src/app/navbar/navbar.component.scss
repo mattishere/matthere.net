@@ -1,0 +1,54 @@
+ul {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    list-style: none;
+    user-select: none;
+    li {
+        a {
+            color: rgb(179, 198, 212);
+            text-decoration: none;
+            padding: 1rem;
+            transition: .4s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(239, 243, 245);
+        }
+    }
+}
+
+@media only screen and (max-width: 860px) {
+	ul {
+		margin-top: 1rem;
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	ul {
+		width: 95%;
+		margin-top: .75rem;
+		font-size: 1.25rem;
+
+		a {
+			padding: .5rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	ul {
+		font-size: 1rem;
+		width: 100%;
+
+		li a {
+			padding: .3rem;
+		}
+	}
+}

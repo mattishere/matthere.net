@@ -1,0 +1,23 @@
+<div class="container">
+	<h1>Projects</h1>
+	<p>If you're interested in my work, this is the page you're looking for. Here are some of my GitHub repositories!</p>
+
+	<div class="projects">
+		<div class="repositories">
+			<div class="repository" *ngFor="let repo of repos">
+				<h2><a [attr.href]="repo.html_url" target="_blank">{{repo.name}}</a></h2>
+				<p class="description">{{repo.description}}</p>
+				<div class="information">
+					<p><i class="fa-solid fa-star"></i>{{repo.stargazers_count}}</p>
+					<p><i class="fa-solid fa-code"></i>{{repo.language}}</p>
+				</div>
+			</div>
+		</div>
+
+		<ng-container *ngIf="noProjects">
+			<h2 class="noProjects"><i class="fa-solid fa-gears"></i> Unable to fetch my projects... Maybe come again later?</h2>
+		</ng-container>
+		<a class="github" href="https://github.com/mattishere?tab=repositories" target="_blank"><i
+				class="fa-brands fa-github"></i>View more on GitHub</a>
+	</div>
+</div>

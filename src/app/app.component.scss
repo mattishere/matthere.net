@@ -1,0 +1,28 @@
+main {
+    width: auto;
+    margin: auto;
+	margin-top: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+    background-color: #2c2f3d;
+    height: 85vh;
+
+    border: 2px solid rgb(179, 198, 212);
+    border-radius: 10px;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1100px) {
+	main {
+		margin-top: .5rem;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	main {
+		margin-left: .5rem;
+		margin-right: .5rem;
+	}
+}

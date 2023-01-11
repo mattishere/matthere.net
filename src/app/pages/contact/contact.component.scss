@@ -1,0 +1,71 @@
+.container {
+    color: rgb(179, 198, 212);
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    h1 {
+        font-size: 5rem;
+        text-decoration: underline;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 2.5rem;
+
+        span {
+            font-weight: bold;
+            color: rgb(212, 220, 224);
+        }
+    }
+
+    li {
+		margin: 1rem;
+		a {
+			font-size: 2rem;
+			color: rgb(179, 198, 212);
+			font-weight: bold;
+			transition: .4s;
+			text-decoration: none;
+			margin: 1rem;
+
+			i {
+				margin-right: .25rem;
+			}
+		}
+		a:hover {
+			color: rgb(239, 243, 245);
+			text-decoration: underline;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+		margin: 2rem;
+		h1 {
+			font-size: 3.5rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+
+		li a {
+			font-size: 1.5rem;
+			margin: .5rem;
+		}
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.container {
+		margin: 1rem;
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+		li a {
+			font-size: 1rem;
+		}
+	}
+}

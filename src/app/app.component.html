@@ -1,0 +1,5 @@
+<app-navbar></app-navbar>
+
+<main [@animations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</main>

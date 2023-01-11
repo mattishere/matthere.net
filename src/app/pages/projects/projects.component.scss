@@ -1,0 +1,231 @@
+.container {
+	color: rgb(179, 198, 212);
+	justify-content: center;
+	align-items: center;
+	margin: 3rem;
+	h1 {
+		font-size: 5rem;
+		text-decoration: underline;
+		margin-bottom: 1rem;
+	}
+	p {
+		font-size: 1.75rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.projects {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		.repositories {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+
+			.repository {
+				width: 40%;
+				background: rgb(37, 40, 56);
+				border: 1px solid rgb(179, 198, 212);
+				border-radius: 10px;
+				padding: 1rem;
+				margin: 1rem;
+
+				h2 {
+					font-size: 2.5rem;
+					a {
+						color: rgb(179, 198, 212);
+						font-weight: bold;
+						text-decoration: underline;
+						transition: .4s;
+					}
+					a:hover {
+						color: rgb(239, 243, 245);
+					}
+				}
+
+				.description {
+					font-size: 1.4rem;
+				}
+
+				.information {
+					display: flex;
+					flex-direction: row;
+					p {
+						font-size: 1.5rem;
+						margin: .5rem;
+
+						i {
+							margin-right: .35rem;
+						}
+						.fa-star {
+							color: rgb(229, 234, 138);
+						}
+					}
+				}
+			}
+
+		}
+
+		.noProjects {
+			font-size: 3rem;
+			color: rgb(93, 111, 124);
+			margin: 5rem;
+		}
+
+
+		.github {
+			color: rgb(179, 198, 212);
+			text-decoration: none;
+			padding: .8rem;
+			background: rgb(37, 40, 56);
+			border: 1px solid rgb(179, 198, 212);
+			transition: .4s;
+			font-size: 2rem;
+	
+			i {
+			    margin-right: .25rem;
+			}
+		} 
+		.github:hover {
+			text-decoration: underline;
+			color: rgb(239, 243, 245);
+			border: 1px solid rgb(239, 243, 245);
+		}
+	}	
+}
+
+@media only screen and (max-width: 1050px) {
+	.container {
+		margin: 2rem;
+		h1 {
+			font-size: 3.5rem;
+			margin-bottom: .5rem;
+		}
+		p {
+			font-size: 1.4rem;
+			margin-top: .5rem;
+		}
+
+		.projects {
+			.repositories {
+				.repository {
+					padding: .75rem;
+					margin: .5rem;
+					h2 {
+						font-size: 1.5rem;
+					}
+					.description {
+						font-size: 1.3rem;
+					}
+					.information {
+						p {
+							font-size: 1.3rem;
+							margin: .5rem;
+						}
+					}
+				}
+
+			}
+
+			.noProjects {
+				font-size: 2rem;
+				margin: 3rem;
+			}
+
+			.github {
+				padding: .7rem;
+				font-size: 1.5rem;	
+			} 
+		}	
+	}
+}
+
+@media only screen and (max-width: 636px) {
+	.container {
+		margin: 1rem;
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: .5rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+
+		.projects {
+			.repositories {
+				.repository {
+					padding: .6rem;
+					margin: .3rem;
+					h2 {
+						font-size: 1.2rem;
+					}
+					.description {
+						font-size: 1.1rem;
+					}
+					.information {
+						p {
+							font-size: 1rem;
+							margin: .5rem;
+						}
+					}
+				}
+			}
+
+			.github {
+				margin-top: .3rem;
+				padding: .7rem;
+				font-size: 1.3rem;	
+			} 
+		}	
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.container {
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: .5rem;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+
+		.projects {
+			.repositories {
+				.repository {
+					width: 100%;
+					padding: 1rem;
+					margin: .5rem;
+					h2 {
+						font-size: 1.4rem;
+					}
+					.description {
+						font-size: 1.25rem;
+					}
+					.information {
+						p {
+							font-size: 1.2rem;
+							margin: .5rem;
+						}
+					}
+				}
+			}
+
+			.noProjects {
+				font-size: 1.3rem;
+				margin: 1rem;
+			}
+
+			.github {
+				margin-top: .4rem;
+				padding: .5rem;
+				font-size: 1.2rem;	
+			} 
+		}	
+	}
+
+}
